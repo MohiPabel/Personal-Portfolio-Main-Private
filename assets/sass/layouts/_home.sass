@@ -1,0 +1,33 @@
+/*===== HOME =====*/
+.home
+  height: calc(100vh - 3rem)
+  row-gap: 1rem
+
+  &__data
+    align-self: center
+
+  &__title
+    font-size: $big-font-size
+    margin-bottom: $mb-5
+
+    &-color
+      color: $first-color
+
+
+  &__social
+    display: flex
+    flex-direction: column
+    &-icon
+      width: max-content
+      margin-bottom: $mb-2
+      font-size: 1.5rem
+      color: $second-color
+
+      &:hover
+        color: $first-color
+
+  &__img
+    position: absolute
+    right: 0
+    bottom: 0
+    width: 295px

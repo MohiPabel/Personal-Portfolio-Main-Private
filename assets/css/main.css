@@ -1,0 +1,23 @@
+@media only screen and (max-width: 770px) {
+  .modal {
+    width: 300px;
+    height: 350px;
+    background-color: #fffff;
+  }
+
+  .modal-items {
+    margin: 10px;
+  }
+
+  .modal h2 {
+    margin-top: 45px;
+  }
+
+  .modal-form-input {
+    width: 280px;
+  }
+
+  .modal-form-button {
+    float: right;
+  }
+}

@@ -1,0 +1,42 @@
+/*===== CLASS CSS ===== */
+.section-title
+  position: relative
+  font-size: $h2-font-size
+  color: $first-color
+  margin-top: $mb-2
+  margin-bottom: $mb-4
+  text-align: center
+
+  &::after
+    position: absolute
+    content: ''
+    width: 64px
+    height: 0.18rem
+    left: 0
+    right: 0
+    margin: auto
+    top: 2rem
+    background-color: $first-color
+
+
+.section
+  padding-top: 3rem
+  padding-bottom: 2rem
+
+/*Active menu*/
+.active::after
+  position: absolute
+  content: ''
+  width: 100%
+  height: 0.18rem
+  left: 0
+  top: 2rem
+  background-color: $first-color
+
+
+/*=== Show menu ===*/
+.show
+  right: 0
+
+.l-header
+  background-color: $black
