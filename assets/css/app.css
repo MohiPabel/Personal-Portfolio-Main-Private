@@ -242,6 +242,7 @@ img {
     outline: none;
     margin-bottom: 2rem;
     caret-color: white;
+    color: #FFFFFF;
     background: #263238;
     box-shadow: inset 4px 4px 8px #101618, inset -4px -4px 8px #3c4f58; }
     .contact__input::placeholder {

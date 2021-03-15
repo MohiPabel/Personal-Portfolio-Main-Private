@@ -10,6 +10,7 @@
         <!-- Font Awesome Icon CDN -->
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
+        <link rel="icon" type="image/png" href="assets/img/MUP1.png">
         <title>Mohi Uddin Pabel</title>
     </head>
     <body>
@@ -17,7 +18,7 @@
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#home" class="nav__logo">M<span style="color:#76ff03">U</span>P</a>
+                    <a href="#home" class="nav__logo"><img src="assets/img/MUP1.png" width="50px" alt="logo"></a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -231,7 +232,7 @@
                         </div>
                     </a>
 
-                    <a href="#" class="work__img">
+                    <a href="https://github.com/MohiPabel/Personal-Portfolio" class="work__img">
                         <img class="img__link" src="assets/img/work3.jpg" alt="Portfolio Website">
                         <div class="img__overlay">
                           <div class="img__title">Portfolio Website</div>
@@ -239,29 +240,29 @@
                         </div>
                     </a>
 
-                    <a href="#" class="work__img">
+                    <div class="work__img">
                         <img class="img__link" src="assets/img/work4.jpg" alt="WordPress Project">
                         <div class="img__overlay">
                           <div class="img__title">WordPress Project</div>
                           <p class="img__descr">WordPress Project</p>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="#" class="work__img">
+                    <div  class="work__img">
                         <img class="img__link" src="assets/img/work5.jpg" alt="Company Website">
                         <div class="img__overlay">
                           <div class="img__title">Company Website</div>
                           <p class="img__descr">Basic HTML Project</p>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="#" class="work__img">
+                    <div  class="work__img">
                         <img class="img__link" src="assets/img/work6.jpg" alt="Green Apple">
                         <div class="img__overlay">
                           <div class="img__title">Green Apple</div>
                           <p class="img__descr">Upcoming</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </section>
 
@@ -270,11 +271,11 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form" method="POST">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="email" placeholder="Email" class="contact__input">
-                        <textarea name="" placeholder="Your Message" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
+                    <form action="contact_mail.php" class="contact__form" method="POST">
+                        <input type="text" placeholder="Name" class="contact__input" name="cname" required>
+                        <input type="email" placeholder="Email" class="contact__input" name="cemail" required>
+                        <textarea placeholder="Your Message" minlength="20" cols="0" rows="10" class="contact__input" name="ctext" required></textarea>
+                        <input type="submit" value="Send" class="contact__button button" name="csend" required>
                     </form>
                 </div>
             </section>
@@ -293,11 +294,11 @@
 
         <div class="modal-bg">
           <div class="modal">
-            <h2 class="modal-items">Send CV Through Email</h2>
-            <p class="modal-items">Input you email below and click send and receive the resume on your email.</p>
-            <form action="" method="POST">
-              <input type="email" placeholder="Email" class="modal-form-input modal-items">
-              <input type="button" value="Send" class="modal-form-button modal-items">
+            <h2 class="modal-items">Send Through Email</h2>
+            <p class="modal-items">Input your email below and click send and receive the resume on your email.</p>
+            <form action="cv_mail.php" method="POST">
+              <input type="email" placeholder="Email" class="modal-form-input modal-items" name="modalMail" required>
+              <input type="submit" value="Send" class="modal-form-button modal-items" name="modalSend" required>
               <span class="modal-close"><i class="fas fa-2x fa-times-circle"></i></span>
             </form>
           </div>
